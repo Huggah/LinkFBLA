@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/discussion_title"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Discussion and Q &amp; A"
+        android:textColor="#000000"
+        android:textSize="24dp"/>
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/discussion_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/ic_refresh"/>
+
+    <RelativeLayout
+        android:id="@+id/add_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/post_border"
+        android:layout_below="@+id/discussion_title">
+
+        <RelativeLayout
+            android:id="@+id/reply_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:background="#cccccc"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/reply_to_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:text="Reply to: name"
+                android:layout_centerVertical="true"
+                android:layout_margin="2dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/reply_to_text"
+                app:srcCompat="@drawable/ic_close" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_send" />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@+id/post"
+            android:layout_below="@+id/reply_to"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Ask something..."
+            android:inputType="textMultiLine"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/questions_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_question"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/no_posts_yet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Posts Yet"
+        android:layout_below="@+id/add_question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        android:textSize="32dp"/>
+
+</RelativeLayout>

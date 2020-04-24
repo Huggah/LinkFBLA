@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:gravity="center|top">
+
+    <TextView
+        android:id="@+id/join_chapter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Hello, join a chapter to get started"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/join_chapter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:hint="Chapter name" />
+
+    <Button
+        android:id="@+id/join_chapter_join_button"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginHorizontal="32dp"
+        app:cornerRadius="0dp"
+        android:text="Join / Create"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        app:backgroundTint="@color/colorAccent"
+        android:background="@color/colorAccent"
+        style="?android:attr/borderlessButtonStyle" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="32dp"
+        app:srcCompat="@drawable/ic_linkfbla" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="8dp"
+        app:cornerRadius="0dp"
+        android:text="Log Out"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        app:backgroundTint="@color/colorAccent"
+        android:background="@color/colorAccent"
+        style="?android:attr/borderlessButtonStyle" />
+
+</LinearLayout>

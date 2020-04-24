@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/post_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/post_profile_pic"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/post_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/post_profile_pic"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/post_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_close"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/post_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_header"
+        android:layout_marginHorizontal="16dp"
+        android:text="Content"
+        android:textColor="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/post_meeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_content"
+        android:background="@drawable/post_border"
+        android:layout_marginHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/post_meeting_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="4-3-2020 Meeting"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/post_view_attendees"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/post_meeting_title"
+            app:cornerRadius="0dp"
+            android:text="Attendees"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            app:backgroundTint="@color/colorAccent"
+            android:background="@color/colorAccent"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <Button
+            android:id="@+id/post_check_in"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/post_meeting_title"
+            app:cornerRadius="0dp"
+            android:text="Check In"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            app:backgroundTint="@color/colorAccent"
+            android:background="@color/colorAccent"
+            style="?android:attr/borderlessButtonStyle" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_meeting"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+
+        android:maxHeight="800px"/>
+
+    <TextView
+        android:id="@+id/post_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_image"
+        android:layout_marginHorizontal="16dp"
+        android:text="Date"/>
+
+</RelativeLayout>

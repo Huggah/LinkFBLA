@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/about_facebook"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="36dp"
+                    app:srcCompat="@drawable/ic_iconfinder_square_facebook_317727"/>
+
+                <ImageView
+                    android:id="@+id/about_instagram"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="36dp"
+                    app:srcCompat="@drawable/ic_iconfinder_instagram_color_1435162"/>
+
+                <ImageView
+                    android:id="@+id/about_twitter"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="36dp"
+                    app:srcCompat="@drawable/ic_iconfinder_twitter_circle_294709"/>
+
+                <ImageView
+                    android:id="@+id/about_website"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="36dp"
+                    app:srcCompat="@drawable/ic_iconfinder_globe_172473"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/about_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                android:text="About FBLA"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_paragraphs"
+                android:layout_margin="16dp"
+                android:textColor="#000000"/>
+            <WebView
+                android:id="@+id/about_web_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">LinkFBLA</string>
+    <string name="facebook_app_id">200374521396668</string>
+    <string name="fb_login_protocol_scheme">fb200374521396668</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string name="about_paragraphs">
+        Future Business Leaders of America (FBLA) is a student-led nationwide organization preparing
+        students with careers in business and many other fields. Students learn values in leadership
+        by holding offices at chapter, state, and national levels.
+        \n\n
+        In addition, students can compete at regional, state, and national conferences where they
+        use their knowledge in business, finance, and other career-oriented fields to win trophies
+        and cash. FBLA also promotes community service as it is partnered with the March of Dimes.
+    </string>
+
+    <string name="bug_reporting_info">
+        Bug reporting features are accessible by shaking your phone on any page in the app.
+    </string>
+</resources>

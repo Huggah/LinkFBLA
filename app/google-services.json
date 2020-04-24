@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "108249428841",
+    "firebase_url": "https://linkfbla.firebaseio.com",
+    "project_id": "linkfbla",
+    "storage_bucket": "linkfbla.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108249428841:android:351b003db6c2e5527743f8",
+        "android_client_info": {
+          "package_name": "com.example.linkfbla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108249428841-vnecan0mg7g51f2iacg209ks11g45oj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcMDfar5m3G8FtYs6xNYe6TulsbUOtxaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108249428841-vnecan0mg7g51f2iacg209ks11g45oj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

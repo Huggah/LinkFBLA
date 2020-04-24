@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_calendar"
+        android:icon="@drawable/ic_calendar"
+        android:title="Calendar" />
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_info"
+        android:title="About FBLA" />
+    <item
+        android:id="@+id/nav_officers"
+        android:icon="@drawable/ic_person_pin"
+        android:title="Chapter Officers" />
+    <item
+        android:id="@+id/nav_question"
+        android:icon="@drawable/ic_question_answer"
+        android:title="Discussion and Q &amp; A" />
+
+    <group
+        android:id="@+id/member_pages"
+        android:visible="true">
+        <item android:title="Members">
+            <menu>
+                <item
+                    android:id="@+id/nav_events"
+                    android:icon="@drawable/ic_event"
+                    android:title="Competitive Events" />
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/nav_officer_tools"
+        android:visible="false">
+        <item android:title="Officer Tools">
+            <menu>
+                <item
+                    android:id="@+id/nav_events_overview"
+                    android:icon="@drawable/ic_event_available_black_24dp"
+                    android:title="Events Overview" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Tools">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_arrow_back"
+                android:title="Log out" />
+
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/ic_contact_mail"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+</menu>

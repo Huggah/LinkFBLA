@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/events_title"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="My Events"
+        android:textColor="#000000"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/events_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/ic_refresh"/>
+
+    <ListView
+        android:id="@+id/my_events_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/events_title"
+        android:layout_above="@+id/add_competitive_event"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/no_events_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Events Yet"
+        android:layout_below="@+id/events_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        android:textSize="32dp"/>
+
+    <RelativeLayout
+        android:id="@+id/add_competitive_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="128dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/add_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/ic_event_available"
+            android:layout_marginHorizontal="16dp"/>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/add_button"
+            android:text="View Competitive Events"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView12"
+            android:layout_alignBottom="@+id/add_button"
+            android:layout_toRightOf="@+id/add_button"
+            android:gravity="bottom"
+            android:text="Click here to add a new event" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

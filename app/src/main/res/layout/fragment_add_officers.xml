@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textPresident"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="President"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="32dp" />
+
+    <include
+        android:layout_below="@+id/textPresident"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/president"
+        layout="@layout/user" />
+
+    <TextView
+        android:id="@+id/textVicePresident"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vice President"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_below="@id/president" />
+
+    <include
+        android:layout_below="@+id/textVicePresident"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vicePresident"
+        layout="@layout/user" />
+
+    <TextView
+        android:id="@+id/textSecretary"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Secretary"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_below="@id/vicePresident" />
+
+    <include
+        android:layout_below="@+id/textSecretary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secretary"
+        layout="@layout/user" />
+
+    <TextView
+        android:id="@+id/textTreasurer"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Treasurer"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_below="@id/secretary" />
+
+    <include
+        android:layout_below="@+id/textTreasurer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/treasurer"
+        layout="@layout/user" />
+
+    <TextView
+        android:id="@+id/textPublicRelations"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Public Relations"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_below="@id/treasurer" />
+
+    <include
+        android:layout_below="@+id/textPublicRelations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/publicRelations"
+        layout="@layout/user" />
+
+</RelativeLayout>
